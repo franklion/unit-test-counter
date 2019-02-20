@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Counter from './Counter'
+import Counter from './Counter';
 
 describe('測試<Counter />', () => {
     const wrapper = shallow(<Counter />)
