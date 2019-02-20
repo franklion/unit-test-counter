@@ -1,4 +1,4 @@
-# unit-test-counter
+# Unit-Test-Counter
 
     - A simple example, counter
 
