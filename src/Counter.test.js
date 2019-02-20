@@ -1,5 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import Counter from './Counter';
 
 describe('測試<Counter />', () => {
@@ -30,5 +31,9 @@ describe('測試<Counter />', () => {
     it('6. 點擊-1按鈕', () => {
         wrapper.find('.btn-dec').simulate('click')
         expect(wrapper.state('counter')).toBe(0)
+    })
+
+    it('7. 輸出snapshot', () => {
+        expect(toJson(wrapper)).toMatchSnapshot()
     })
 })
